@@ -1,3 +1,0 @@
-C:/Users/zain_/CLionProjects/cardprogram/cmake-build-debug/CMakeFiles/cardprogram.dir
-C:/Users/zain_/CLionProjects/cardprogram/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/zain_/CLionProjects/cardprogram/cmake-build-debug/CMakeFiles/rebuild_cache.dir

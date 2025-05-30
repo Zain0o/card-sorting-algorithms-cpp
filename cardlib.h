@@ -5,24 +5,25 @@
 #ifndef CARDPROGRAM_CARDLIB_H
 #define CARDPROGRAM_CARDLIB_H
 
+#include <string> // For string
 
-#include <string>
-// In cardlib.h, add the function declaration
+// These globals will be defined in main.cpp
+extern int comparisons; // The number of comparisons
+extern int swaps;       // The number of swaps (used by BubbleSort as moves)
+// extern std::vector<aCard> thePack; // No, keep it defined in main.cpp
 
-extern int comparisons;
-extern int swaps;
+enum Suit { hearts, clubs, diamonds, spades }; // The suits of the cards
 
-enum Suit { hearts, clubs, diamonds, spades };      // define suits
-
-struct aCard {                          // defines a card
-    int cardVal;                        // number 1..13
-    Suit cardSuit;                      // suit
+struct aCard {                         // A card
+    int cardVal;                      // The value of the card
+    Suit cardSuit;                      // The suit of the card
 };
 
-std::string cardToStr(aCard c);			// declare function to represent a card as a two character string
+std::string cardToStr(aCard c);			// Convert a card to a string
+aCard getCard(std::string stdno);       // Get a random card
+int compareCards(aCard c1, aCard c2); // Compare two cards
 
-aCard getCard(std::string stdno);        // declares function to get a card from stdno string
-int compareCards(aCard c1, aCard c2);
+// QuickSort prototype - definition will be in main.cpp
 void quickSort(int low, int high, int& moves, int& maxDepth, int depth = 0);
 
 #endif //CARDPROGRAM_CARDLIB_H

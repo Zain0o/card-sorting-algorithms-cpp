@@ -1,0 +1,42 @@
+# CMake build files
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# CLion specific files
+.idea/
+*.iws
+*.iml
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Executables
+*.exe
+*.out
+*.app
+*.cbp # Code::Blocks project file
+
+# Other
+*.stackdump
+*.DS_Store
+*~
+*.swp
